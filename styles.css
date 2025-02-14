@@ -55,3 +55,65 @@ p {
     font-weight: bold;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.love-link {
+    display: block;
+    text-align: center;
+    background: #ff4d4d;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: fit-content;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.love-link:hover {
+    background: #cc0000;
+}
+
+.slideshow-container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    background: #ffe6e6;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.slide {
+    display: none;
+}
+
+.fade {
+    animation: fadeEffect 2s ease-in-out infinite;
+}
+
+@keyframes fadeEffect {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.back-btn {
+    display: block;
+    text-align: center;
+    margin: 30px auto;
+    background: #333;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.back-btn:hover {
+    background: black;
+}
+
