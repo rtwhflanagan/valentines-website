@@ -1,3 +1,15 @@
+/* ❤️ Love Hearts Background */
+body {
+    background: url('hearts-background.jpg') no-repeat center center fixed; /* Center the image */
+    background-size: cover; /* Ensure it covers the whole screen */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    height: 100vh; /* Ensure it covers the full height of the screen */
+    margin: 0; /* Remove any margin around the body */
+    padding: 0; /* Remove any padding for full-page background */
+}
+
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #ffe6e6;
@@ -129,12 +141,98 @@ p {
     background: #cc0000;
 }
 
-/* ❤️ Love Hearts Background */
-body {
-    background: url('hearts-background.jpg') no-repeat center center fixed; /* Center the image */
-    background-size: cover; /* Ensure it covers the whole screen */
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-    height: 100vh; /* Ensure it covers the full height of the screen */
-    margin: 0; /* Remove any margin around the body */
+/* 💖 Mobile and Tablet Adjustments */
+@media (max-width: 768px) {
+    /* Reduce max-width of container for tablets */
+    .container {
+        max-width: 100%; /* Use full width of screen on smaller devices */
+        padding: 15px;   /* Adjust padding */
+    }
+
+    /* Adjust text size for titles */
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px; /* Smaller text on mobile */
+    }
+
+    .gallery img {
+        width: 150px; /* Smaller images on mobile */
+        height: auto;
+    }
+
+    .love-note {
+        padding: 10px;  /* Less padding */
+        font-size: 16px; /* Smaller font */
+    }
+
+    .coming-soon {
+        padding: 15px;  /* Less padding */
+        font-size: 16px;
+    }
+
+    /* Slideshow Container */
+    .slideshow-container {
+        max-width: 90%; /* Make slideshow fit the screen better on smaller screens */
+        padding: 20px;  /* Less padding */
+    }
+
+    .slide {
+        font-size: 28px; /* Smaller font size for smaller screens */
+        padding: 20px;
+    }
+
+    /* Adjust the back button size */
+    .back-btn {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+/* 📱 Mobile Adjustments */
+@media (max-width: 480px) {
+    /* Container padding for mobile */
+    .container {
+        padding: 10px;  /* Further reduce padding for phones */
+    }
+
+    h1 {
+        font-size: 20px; /* Smaller title font size */
+    }
+
+    p {
+        font-size: 14px; /* Even smaller text on mobile */
+    }
+
+    .gallery img {
+        width: 120px; /* Even smaller images on mobile */
+    }
+
+    .love-note {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .coming-soon {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    /* Slideshow Container */
+    .slideshow-container {
+        max-width: 100%; /* Full-width slideshow for mobile */
+        padding: 15px;  /* Even less padding */
+    }
+
+    .slide {
+        font-size: 22px; /* Even smaller font size */
+        padding: 15px;
+    }
+
+    .back-btn {
+        font-size: 14px;
+        padding: 10px;  /* Smaller button padding */
+    }
 }
