@@ -128,3 +128,13 @@ p {
 .back-btn:hover {
     background: #cc0000;
 }
+
+/* ❤️ Love Hearts Background */
+body {
+    background: url('hearts-background.jpg') no-repeat center center fixed; /* Center the image */
+    background-size: cover; /* Ensure it covers the whole screen */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    height: 100vh; /* Ensure it covers the full height of the screen */
+    margin: 0; /* Remove any margin around the body */
+}
