@@ -1,15 +1,3 @@
-/* ❤️ Love Hearts Background */
-body {
-    background: url('hearts-background.jpg') no-repeat center center fixed; /* Center the image */
-    background-size: cover; /* Ensure it covers the whole screen */
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-    height: 100vh; /* Ensure it covers the full height of the screen */
-    margin: 0; /* Remove any margin around the body */
-    padding: 0; /* Remove any padding for full-page background */
-}
-
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #ffe6e6;
@@ -18,6 +6,7 @@ body {
     padding: 20px;
 }
 
+/* Container for content */
 .container {
     max-width: 800px;
     margin: auto;
@@ -36,6 +25,7 @@ p {
     color: #333;
 }
 
+/* Gallery styling */
 .gallery {
     display: flex;
     justify-content: center;
@@ -50,6 +40,7 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Love note box styling */
 .love-note {
     margin-top: 20px;
     background: #ffccd5;
@@ -57,6 +48,7 @@ p {
     border-radius: 10px;
 }
 
+/* Coming soon text styling */
 .coming-soon {
     text-align: center;
     background: #ffe6e6;
@@ -68,6 +60,7 @@ p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Link button styling */
 .love-link {
     display: block;
     text-align: center;
@@ -88,7 +81,7 @@ p {
     background: #cc0000;
 }
 
-/* 💖 Styling the 10 Reasons Text Box */
+/* Slideshow container styling */
 .slideshow-container {
     max-width: 800px;
     margin: auto;
@@ -101,6 +94,7 @@ p {
     font-family: 'Arial', sans-serif;
 }
 
+/* Slide styling */
 .slide {
     display: none;
     font-size: 36px; /* Larger text */
@@ -113,16 +107,20 @@ p {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.fade {
-    animation: fadeEffect 2s ease-in-out infinite;
-}
-
+/* Fade effect for the slideshow */
 @keyframes fadeEffect {
     0% {opacity: 0;}
-    100% {opacity: 1;}
+    20% {opacity: 1;}  /* Slightly longer fade in */
+    80% {opacity: 1;}  /* Stay visible for a while */
+    100% {opacity: 0;} /* Fade out */
 }
 
-/* 🎀 Back Button */
+/* Apply the fade effect with slower speed */
+.fade {
+    animation: fadeEffect 4s ease-in-out forwards; /* Longer duration for smoother transition */
+}
+
+/* Back button styling */
 .back-btn {
     display: block;
     margin: 30px auto;
@@ -137,102 +135,41 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
 }
+
 .back-btn:hover {
     background: #cc0000;
 }
 
-/* 💖 Mobile and Tablet Adjustments */
+/* Love hearts background styling */
+body {
+    background: url('hearts-background.jpg') no-repeat center center fixed; /* Center the image */
+    background-size: cover; /* Ensure it covers the whole screen */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    height: 100vh; /* Ensure it covers the full height of the screen */
+    margin: 0; /* Remove any margin around the body */
+}
+
+/* Additional mobile adjustments */
 @media (max-width: 768px) {
-    /* Reduce max-width of container for tablets */
     .container {
-        max-width: 100%; /* Use full width of screen on smaller devices */
-        padding: 15px;   /* Adjust padding */
+        width: 90%; /* Make the container take up more space on smaller screens */
     }
 
-    /* Adjust text size for titles */
-    h1 {
-        font-size: 24px;
+    .gallery {
+        flex-direction: column;
     }
 
-    p {
-        font-size: 16px; /* Smaller text on mobile */
+    .love-link {
+        width: 80%; /* Make the love link more centered on small screens */
     }
 
-    .gallery img {
-        width: 150px; /* Smaller images on mobile */
-        height: auto;
-    }
-
-    .love-note {
-        padding: 10px;  /* Less padding */
-        font-size: 16px; /* Smaller font */
-    }
-
-    .coming-soon {
-        padding: 15px;  /* Less padding */
-        font-size: 16px;
-    }
-
-    /* Slideshow Container */
     .slideshow-container {
-        max-width: 90%; /* Make slideshow fit the screen better on smaller screens */
-        padding: 20px;  /* Less padding */
-    }
-
-    .slide {
-        font-size: 28px; /* Smaller font size for smaller screens */
         padding: 20px;
     }
 
-    /* Adjust the back button size */
-    .back-btn {
-        font-size: 16px;
-        padding: 12px;
-    }
-}
-
-/* 📱 Mobile Adjustments */
-@media (max-width: 480px) {
-    /* Container padding for mobile */
-    .container {
-        padding: 10px;  /* Further reduce padding for phones */
-    }
-
-    h1 {
-        font-size: 20px; /* Smaller title font size */
-    }
-
-    p {
-        font-size: 14px; /* Even smaller text on mobile */
-    }
-
-    .gallery img {
-        width: 120px; /* Even smaller images on mobile */
-    }
-
-    .love-note {
-        font-size: 14px;
-        padding: 8px;
-    }
-
-    .coming-soon {
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    /* Slideshow Container */
-    .slideshow-container {
-        max-width: 100%; /* Full-width slideshow for mobile */
-        padding: 15px;  /* Even less padding */
-    }
-
     .slide {
-        font-size: 22px; /* Even smaller font size */
-        padding: 15px;
-    }
-
-    .back-btn {
-        font-size: 14px;
-        padding: 10px;  /* Smaller button padding */
+        font-size: 28px; /* Slightly smaller text on mobile */
+        padding: 20px;
     }
 }
